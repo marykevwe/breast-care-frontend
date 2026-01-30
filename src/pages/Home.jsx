@@ -1,8 +1,17 @@
+import { motion } from "framer-motion";
+
 export default function Home() {
   return (
     <div className="w-full">
 
       {/* HERO SECTION */}
+       <motion.div
+        initial={{ opacity: 0, x: -100 }} // start hidden off-screen left
+        whileInView={{ opacity: 1, x: 0 }} // animate when in view
+        viewport={{ once: false, amount: 0.3 }} // trigger every time 30% of element is visible
+        transition={{ duration: 0.8 }}
+        className="p-8 text-center bg-pink-50 rounded"
+      >
       <section className="bg-pink-50 py-20 px-6 text-center">
         <h2 className="text-5xl font-extrabold text-pink-700 mb-6">
           Together We Fight Breast Cancer
@@ -18,8 +27,15 @@ export default function Home() {
           className="mx-auto rounded-2xl shadow-lg max-w-4xl w-full"
         />
       </section>
-
+</motion.div>
       {/* ABOUT SECTION */}
+       <motion.div
+        initial={{ opacity: 0, x: -100 }} // start hidden off-screen left
+        whileInView={{ opacity: 1, x: 0 }} // animate when in view
+        viewport={{ once: false, amount: 0.3 }} // trigger every time 30% of element is visible
+        transition={{ duration: 0.8 }}
+        className="p-8 text-center bg-pink-50 rounded"
+      >
       <section className="py-16 px-6 bg-white">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
           <img
@@ -45,8 +61,15 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+</motion.div>
       {/* SERVICES / IMPACT */}
+       <motion.div
+        initial={{ opacity: 0, x: -100 }} // start hidden off-screen left
+        whileInView={{ opacity: 1, x: 0 }} // animate when in view
+        viewport={{ once: false, amount: 0.3 }} // trigger every time 30% of element is visible
+        transition={{ duration: 0.8 }}
+        className="p-8 text-center bg-pink-50 rounded"
+      >
       <section className="bg-pink-100 py-16 px-6">
         <h3 className="text-3xl font-bold text-center text-pink-800 mb-12">
           What We Stand For
@@ -96,7 +119,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+</motion.div>
       {/* CALL TO ACTION */}
       <section className="py-20 px-6 bg-pink-700 text-white text-center">
         <h3 className="text-4xl font-bold mb-4">
