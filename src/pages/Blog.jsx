@@ -19,7 +19,7 @@ export default function Blog() {
   ];
 
   return (
-    <div className="p-8 grid md:grid-cols-3 gap-6">
+    <div className="pt-20 p-8 grid md:grid-cols-3 gap-6">
       {posts.map((p, i) => (
         <div key={i} className="border rounded shadow">
           <img src={p.image} className="h-48 w-full object-cover"/>
