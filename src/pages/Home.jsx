@@ -63,19 +63,20 @@ export default function Home() {
       </section>
 </motion.div>
       {/* SERVICES / IMPACT */}
-       <motion.div
+       
+      <section className="bg-pink-100 py-16 px-6">
+        <h3 className="text-3xl font-bold text-center text-pink-800 mb-12">
+          What We Stand For
+        </h3>
+       
+        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+          <motion.div
         initial={{ opacity: 0, x: -100 }} // start hidden off-screen left
         whileInView={{ opacity: 1, x: 0 }} // animate when in view
         viewport={{ once: false, amount: 0.3 }} // trigger every time 30% of element is visible
         transition={{ duration: 0.8 }}
         className="p-8 text-center bg-pink-50 rounded"
       >
-      <section className="bg-pink-100 py-16 px-6">
-        <h3 className="text-3xl font-bold text-center text-pink-800 mb-12">
-          What We Stand For
-        </h3>
-
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-xl shadow-md text-center">
             <img
               src="https://images.unsplash.com/photo-1584467735871-b4fdb4b62b7c"
@@ -89,7 +90,14 @@ export default function Home() {
               attention.
             </p>
           </div>
-
+</motion.div>
+ <motion.div
+        initial={{ opacity: 0, x: -100 }} // start hidden off-screen left
+        whileInView={{ opacity: 1, x: 0 }} // animate when in view
+        viewport={{ once: false, amount: 0.3 }} // trigger every time 30% of element is visible
+        transition={{ duration: 0.8 }}
+        className="p-8 text-center bg-pink-50 rounded"
+      >
           <div className="bg-white p-6 rounded-xl shadow-md text-center">
             <img
               src="https://images.unsplash.com/photo-1526256262350-7da7584cf5eb"
@@ -103,7 +111,14 @@ export default function Home() {
               community support.
             </p>
           </div>
-
+</motion.div>
+<motion.div
+        initial={{ opacity: 0, x: -100 }} // start hidden off-screen left
+        whileInView={{ opacity: 1, x: 0 }} // animate when in view
+        viewport={{ once: false, amount: 0.3 }} // trigger every time 30% of element is visible
+        transition={{ duration: 0.8 }}
+        className="p-8 text-center bg-pink-50 rounded"
+      >
           <div className="bg-white p-6 rounded-xl shadow-md text-center">
             <img
               src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528"
@@ -117,9 +132,10 @@ export default function Home() {
               healthcare services.
             </p>
           </div>
+          </motion.div>
         </div>
       </section>
-</motion.div>
+
       {/* CALL TO ACTION */}
       <section className="py-20 px-6 bg-pink-700 text-white text-center">
         <h3 className="text-4xl font-bold mb-4">
